@@ -33,8 +33,12 @@
             margin: 10px 0;
         }
         .links {
-            margin-top: 20px;
+            margin-top: 30px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
         }
         .links a {
             color: #3498db;
@@ -51,34 +55,80 @@
             border-top: 1px solid #eee;
             padding-top: 20px;
         }
+        .app-store-button {
+            display: inline-block;
+            background-color: #0066cc;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 20px 0;
+            transition: background-color 0.2s;
+        }
+        
+        .app-store-button:hover {
+            background-color: #0052a3;
+            text-decoration: none !important;
+        }
+        
+        .site-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .site-nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .site-nav a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .site-nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Endless Climb: Arcade Jumper</h1>
+    <div class="site-header">
+        <h1>Endless Climb: Arcade Jumper</h1>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="https://github.com/charlieyalf">GitHub</a>
+        </nav>
+    </div>
 
     <div class="game-content">
         <h2>About the Game</h2>
-        <p>Challenge yourself in this exciting endless runner where you climb ever-higher while avoiding obstacles and collecting power-ups. Test your reflexes and see how high you can climb!</p>
+        <p>Help Basil climb to the moon in this challenging arcade adventure! Master one-tap controls, unlock powers, and customize your character. Warning: addictively frustrating!</p>
 
         <div class="features">
             <h3>Features:</h3>
             <ul>
-                <li>Simple one-touch controls</li>
-                <li>Endless climbing gameplay</li>
-                <li>Challenging obstacles</li>
-                <li>Power-ups to collect</li>
-                <li>Compete for high scores</li>
+                <li>One-tap gameplay that's easy to learn, thrilling to master</li>
+                <li>Action queueing system for smooth, satisfying combos</li>
+                <li>Rich progression with upgrades and power-ups</li>
+                <li>Gorgeous visual effects and responsive controls</li>
+                <li>Customize Basil with unique cosmetics</li>
+                <li>Competitive leaderboards to challenge friends</li>
+                <li>Offline play for anywhere, anytime fun</li>
             </ul>
         </div>
 
         <div class="links">
+            <a href="https://apps.apple.com/us/app/endless-climb-arcade-jumper/id6740424786" class="app-store-button">Download on the App Store</a>
             <a href="endless-stairs-privacy-policy.html">Privacy Policy</a>
             <a href="index.html">Back to Games</a>
         </div>
     </div>
 
     <footer>
-        <p><a href="https://github.com/charlieyalf">Visit Developer's GitHub Profile</a></p>
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="https://github.com/charlieyalf">GitHub</a>
+        </p>
     </footer>
 </body>
 </html> 

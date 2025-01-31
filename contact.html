@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Charlie Yalf's Apps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .site-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .site-nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .site-nav a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .site-nav a:hover {
+            text-decoration: underline;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <h1>Contact Us</h1>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="https://github.com/charlieyalf">GitHub</a>
+        </nav>
+    </div>
+
+    <div class="contact-form">
+        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product">Regarding</label>
+                <select name="product" id="product" required>
+                    <option value="">Select an option</option>
+                    <option value="Endless Climb">Endless Climb: Arcade Jumper</option>
+                    <option value="Prompt Pro">Prompt Pro</option>
+                    <option value="Calm Pomodoro">Calm Pomodoro</option>
+                    <option value="Other">Other Enquiry</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="https://github.com/charlieyalf">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html> 
